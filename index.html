@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Aplicaciones Móviles Multiplataforma</title>
+    <style>
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+            color: #f3f3f3;
+            animation: fadeIn 2s ease;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+
+        /* Botones del menú */
+        .menu-item {
+            padding: 15px;
+            margin: 15px 0;
+            background: linear-gradient(145deg, #444, #555);
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.15;
+            z-index: -1;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.2);
+            opacity: 0.3;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7), inset 0 0 10px rgba(72, 239, 128, 0.5);
+            animation: glow 1.5s infinite;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #76ff03;
+        }
+
+        /* Mejoras en los enlaces del menú */
+        .menu-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .menu-item a:hover {
+            color: #76ff03;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Desarrollo de Aplicaciones Móviles Multiplataforma</h1>
+    </header>
+    <main>
+        <h2>Submódulo 1: Diseña Aplicaciones Móviles Multiplataforma</h2>
+        <div class="menu-item">
+            <a href="Introduccion.html">
+                <img src="https://th.bing.com/th/id/OIP.icJ3KdwX9x7MC0zjXMTCkwHaD2?rs=1&pid=ImgDetMain" alt="Introducción">
+                Introducción
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="herramientas.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2362/2362238.png" alt="Publicación">
+                herramientas
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="diseno_interfaces.html">
+                <img src="https://th.bing.com/th/id/OIP.tfQAJ0lon_S34br6rNSlcQHaEK?rs=1&pid=ImgDetMain"
+                    alt="Diseño de Interfaces">
+                Diseño de Interfaces Atractivas
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="funcionalidades.html">
+                <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s2533a3491effc287/image/i3e9630008b673167/version/1425553357/image.png"
+                    alt="Funcionalidades Avanzadas">
+                Funcionalidades Avanzadas
+            </a>
+        </div>
+        <h2>Submódulo 2: Implementa Aplicaciones Móviles Multiplataforma</h2>
+        <div class="menu-item">
+            <a href="integracion_nube.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920250.png" alt="Integración Nube y APIs">
+                Integración con Servicios en la Nube y APIs
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="pruebas_depuracion.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/4341/4341050.png" alt="Pruebas y Depuración">
+                Pruebas y Depuración
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="publicacion.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2362/2362238.png" alt="Publicación">
+                Publicación
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="mantenimiento.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Mantenimiento">
+                Mantenimiento
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="Juegito.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Mantenimiento">
+                Prueba De APP
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>Creado a partir del contenido proporcionado. Aprende más sobre <a
+                href="https://es.bitdegree.org/tutoriales/desarrollar-aplicaciones-moviles-multiplataforma"
+                target="_blank">Desarrollo de Apps Móviles</a>.</p>
+    </footer>
+</body>
+
+</html>
